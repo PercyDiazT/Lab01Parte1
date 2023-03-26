@@ -31,8 +31,11 @@ public class ContainerRect {
 
 	@Override
 	public String toString() {
-		return "ContainerRect [arrRect=" + Arrays.toString(arrRect) + ", arrDist=" + Arrays.toString(arrDist)
-				+ ", arrAreas=" + Arrays.toString(arrAreas) + ", n=" + n + ", numRec=" + numRec + "]";
+		String s = "Rectangulo\t Coordenadas\t\t Distancia\t\t Area \n";
+		for (int i= 0; i < numRec; i++) {
+			s += i +"\t\t"+ " "+arrRect[i].getEsquina1()+","+arrRect[i].getEsquina2()+" \t"+arrDist[i]+"\t"+arrAreas[i]+"\n";
+		}
+		return s;
 	}
 	
 
