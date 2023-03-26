@@ -79,7 +79,7 @@ public class Coordenada {
 			return this.y;
 		}
 		else {
-			return c2.getX();
+			return c2.getY();
 		}		
 	}
 	
